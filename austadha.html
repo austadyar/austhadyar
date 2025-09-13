@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="استاد یار | آموزش آنلاین با اساتید برتر ایران در تمام مقاطع تحصیلی">
+  <title>اساتید - استاد یار</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font -->
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazirmatn/Vazirmatn.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: "Vazirmatn", sans-serif;
+    }
+    .navbar {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 22px;
+      color: #0d6efd !important;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      margin-left: 10px;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+    .card-img-wrapper {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+    .card-img-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .card-body {
+      padding: 1.2rem;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 14px;
+      color: #666;
+    }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 8px;
+      transition: all 0.3s ease;
+    }
+    .social-links a img {
+      width: 30px;
+      height: 30px;
+    }
+    .social-links a:hover {
+      transform: scale(1.15);
+    }
+    .social-telegram { background: #229ED9; }
+    .social-instagram { background: radial-gradient(circle at 30% 30%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    .social-whatsapp { background: #25D366; }
+    .social-rubika { background: #f8f9fa; border: 2px solid #666; }
+    footer {
+      background: #0d6efd;
+      color: #fff;
+    }
+    @media (max-width: 576px) {
+      .card-title { font-size: 16px; }
+      .card-text { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn.imgurl.ir/uploads/y525968_logologo.png" width="45" height="45" alt="لوگو"/>
+      استاد یار
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">خانه</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">درباره ما</a></li>
+        <li class="nav-item"><a class="nav-link" href="./austadha.html">اساتید</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- لیست اساتید -->
+<div class="container py-5">
+  <div class="row g-4 justify-content-center">
+    <!-- استاد -->
+    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+      <div class="card text-center h-100">
+        <div class="card-img-wrapper">
+          <img src="https://cdn.imgurl.ir/uploads/t614853_soma.jpg" alt="استاد" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">👩 سمیه قادری منش</h5>
+          <p class="card-text">🎓 فوق لیسانس آمار ریاضی - دانشگاه رازی</p>
+          <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#teacherProfileModal">
+            مشاهده پروفایل
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- جایگاه استاد -->
+    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card text-center h-100 d-flex flex-column justify-content-center">
+        <div class="card-body">
+          <i class="bi bi-person-plus-fill display-4 text-primary mb-3"></i>
+          <h5 class="card-title">جای شما اینجاست!</h5>
+          <p class="card-text">اگر مدرس هستید، همین حالا به جمع ما بپیوندید.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#collabModal">
+            همکاری با استاد یار
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- پروفایل استاد -->
+<div class="modal fade" id="teacherProfileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-end">
+      <div class="modal-header">
+        <h5 class="modal-title">پروفایل استاد سمیه قادری منش</h5>
+        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-4 text-center mb-3">
+          <img src="https://cdn.imgurl.ir/uploads/t614853_soma.jpg" alt="عکس استاد" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-8">
+          <p><strong>🎓 مدرک تحصیلی:</strong> فوق لیسانس آمار ریاضی</p>
+          <p><strong>🏫 دانشگاه:</strong> دانشگاه رازی کرمانشاه</p>
+          <p><strong>📅 سابقه تدریس:</strong> 15 سال</p>
+          <p><strong>📍 استان:</strong> البرز</p>
+          <p><strong>📘 دروس تخصصی:</strong> 
+            <span class="badge bg-primary">آمار</span>
+            <span class="badge bg-success">احتمال</span>
+            <span class="badge bg-warning text-dark">ریاضی عمومی</span>
+          </p>
+          <p><strong>💬 درباره استاد:</strong> استاد قادری منش با سابقه تدریس در دبیرستان‌ها و آموزشگاه‌های مطرح کشور، به روشی مفهومی و نوین ریاضی را تدریس می‌کنند.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">رزرو کلاس</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- مودال تماس -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">ارتباط با استاد</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://t.me/mast_teacher_1365" target="_blank" class="social-telegram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="تلگرام">
+          </a>
+          <a href="https://instagram.com/math_teacher1365" target="_blank" class="social-instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="اینستاگرام">
+          </a>
+          <a href="https://wa.me/09189912993" target="_blank" class="social-whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="واتساپ">
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- مودال همکاری -->
+<div class="modal fade" id="collabModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">همکاری با استاد یار</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://rubika.ir/austadyar" target="_blank" class="social-rubika">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Rubika_Icon.png" alt="روبیکا">
+          </a>
+          <a href="https://instagram.com/austadyar" target="_blank" class="social-instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="اینستاگرام">
+          </a>
+          <a href="https://wa.me/09942079758" target="_blank" class="social-whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="واتساپ">
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- فوتر -->
+<footer class="text-center py-4 mt-5">
+  <p>© 2025 استاد یار | تمامی حقوق محفوظ است.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+</body>
+</html>
