@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>کلاس سوم - مطالب درسی</title>
+  <link rel="icon" href="https://cdn.imgurl.ir/uploads/y525968_logologo.png" type="image/png+xml" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font -->
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazirmatn/Vazirmatn.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f9fbfd;
+      font-family: "Vazirmatn", sans-serif;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #0d6efd !important;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img { margin-left: 8px; }
+    h2 { font-weight: 700; }
+
+    .book-card {
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+    }
+    .book-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .book-icon {
+      font-size: 2.3rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #0d6efd;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="https://cdn.imgurl.ir/uploads/y525968_logologo.png" width="50" height="50" alt="لوگو"/>
+        استاد یار
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./index.html">خانه</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">درباره ما</a></li>
+          <li class="nav-item"><a class="nav-link" href="./austadha.html">اساتید</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./jzvat.html">مطالب درسی</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h2 class="text-center text-success mb-4" data-aos="fade-up">📘 کتاب‌های کلاس سوم</h2>
+    <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+      این بخش شامل همه‌ی کتاب‌های درسی پایه سوم دبستان است.
+    </p>
+
+    <div class="row g-4">
+      <div class="row g-4">
+      <!-- فارسی -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <a href="book-farsi2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalFarsi3">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-journal-text book-icon"></i>
+            <h6 class="fw-bold">فارسی</h6>
+          </div>
+        </a>
+      </div>
+
+      <!-- ریاضی -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <a href="book-math2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalmath">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-calculator book-icon"></i>
+            <h6 class="fw-bold">ریاضی</h6>
+          </div>
+        </a>
+      </div>
+
+      <!-- علوم -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <a href="book-science2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalolom">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-lightbulb book-icon"></i>
+            <h6 class="fw-bold">علوم</h6>
+          </div>
+        </a>
+      </div>
+
+      <!-- قرآن -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <a href="book-quran2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalqaran">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-book-half book-icon"></i>
+            <h6 class="fw-bold">قرآن</h6>
+          </div>
+        </a>
+      </div>
+
+      <!-- هدیه‌های آسمانی -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <a href="book-gift2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modaldini">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-star book-icon"></i>
+            <h6 class="fw-bold">هدیه‌های آسمانی</h6>
+          </div>
+        </a>
+      </div>
+<!-- مطالعات اجتماعی -->
+<div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+  <a href="#" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalmt">
+    <div class="card book-card text-center p-4">
+      <i class="bi bi-people book-icon"></i>
+      <h6 class="fw-bold">مطالعات اجتماعی </h6>
+    </div>
+  </a>
+</div>
+      <!-- نگارش-->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+        <a href="book-kar2.html" class="text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#modalngarsh">
+          <div class="card book-card text-center p-4">
+            <i class="bi bi-tools book-icon"></i>
+            <h6 class="fw-bold">نگارش</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+   
+
+
+  <div class="modal fade" id="modalFarsi3" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">فارسی </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          
+            <a href="https://uploadkon.ir/uploads/ed2414_25C303.pdf" class="btn btn-success w-100 mb-2" target="_blank" download>
+            📕 دانلود PDF کتاب
+          </a>
+         
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  
+  
+  
+  -->
+  
+  <div class="modal fade" id="modalmt" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">مطالعات اجتماعی </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          
+            <a href="https://uploadkon.ir/uploads/f99214_25C307.pdf" class="btn btn-success w-100 mb-2" target="_blank" download>
+            📕 دانلود PDF کتاب
+          </a>
+         
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="modalmath" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">ریاضی </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          <a href="https://uploadkon.ir/uploads/cdd814_25C305.pdf" class="btn btn-success w-100 mb-3" target="_blank">
+            📕 دانلود PDF کتاب
+          </a>
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="modal fade" id="modalolom" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">علوم </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          <a href="https://uploadkon.ir/uploads/41c414_25C306.pdf" class="btn btn-success w-100 mb-3" target="_blank">
+            📕 دانلود PDF کتاب
+          </a>
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="modal fade" id="modalqaran" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">قران </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          <a href="https://uploadkon.ir/uploads/e6f514_25C301.pdf" class="btn btn-success w-100 mb-3" target="_blank">
+            📕 دانلود PDF کتاب
+          </a>
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="modal fade" id="modalngarsh" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">نگارش </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          <a href="https://uploadkon.ir/uploads/925c14_25C304.pdf" class="btn btn-success w-100 mb-3" target="_blank">
+            📕 دانلود PDF کتاب
+          </a>
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modaldini" tabindex="-1" aria-labelledby="modalFarsi3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalFarsi3Label">هدیه‌های آسمانی </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="mb-4">لطفاً گزینه موردنظر را انتخاب کنید:</p>
+          <a href="https://uploadkon.ir/uploads/e2e514_25C302.pdf" class="btn btn-success w-100 mb-3" target="_blank">
+            📕 دانلود PDF کتاب
+          </a>
+          <a class="btn btn-secondary w-100 " >
+            📘 دانلود گام به گام(بزودی)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="mb-0">© 2025 استاد یار | تمامی حقوق محفوظ است.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
